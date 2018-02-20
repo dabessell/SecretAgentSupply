@@ -94,6 +94,10 @@ html, body {
 	padding-bottom: 0.75rem;
 }
 
+.nav-bar-menu {
+	display: none;
+}
+
 /* BEGIN MAIN BODY SECTION */
 
 main {
@@ -160,3 +164,100 @@ main {
 
 /* BEGIN FOOTER SECTION */
 
+footer {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	width: 100%;
+	background-color: black;
+	height: 5rem;
+	align-items: center;
+}
+
+.footer-container {
+	color: white;
+	text-align: left;
+	width: 960px;
+}
+
+/* BEGIN MEDIA QUERIES */
+
+@media only screen and (max-width: 1024px) {
+	.item {
+		width: 47%;
+	}
+
+	#glasses {
+		display: none;
+	}
+
+	.nav-items {
+		display: none;
+	}
+
+	.nav-bar-menu {
+		display: flex;
+		justify-content: space-around;
+		width: 960px;
+		color: white;
+		padding-top: 0.75rem;
+		padding-bottom: 0.75rem;
+	}
+}
+
+@media only screen and (max-width: 470px) {
+	.header-new-arrival {
+		height: 15rem;
+		padding: 1rem 2rem;
+	}
+
+	.header-new-arrival h4 {
+		font-size: 0.77rem;
+		font-weight: bold;
+		font-family: Helvetica;
+	}
+
+	.header-new-arrival h3 {
+		font-size: 1rem;
+		font-weight: bold;
+		font-family: Helvetica;
+	}
+
+	.header-container {
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+		margin-top: 10rem;
+	}
+
+	#glasses {
+		display: none;
+	}
+
+	#watch {
+		display: none;
+	}
+
+	.item {
+		width: 90%;
+	}
+
+	.location-hours-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 90%;
+		margin-bottom: 4rem;
+	}
+
+	.location-hours span {
+		padding-bottom: 0.5rem;
+	}
+
+	.footer-container {
+		color: white;
+		text-align: center;
+		width: 100%;
+	}
+
+}
